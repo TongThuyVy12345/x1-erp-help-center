@@ -1,0 +1,621 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary":"#004ac6","inverse-on-surface":"#eaf1ff","on-tertiary-container":"#e7f2ff","error":"#ba1a1a","on-tertiary":"#ffffff","surface-container":"#e5eeff","on-secondary-container":"#5c647a","on-tertiary-fixed-variant":"#004b73","on-error-container":"#93000a","error-container":"#ffdad6","secondary-container":"#dae2fd","on-primary":"#ffffff","surface-tint":"#0053db","on-background":"#0b1c30","surface-container-lowest":"#ffffff","surface-dim":"#cbdbf5","on-surface":"#0b1c30","surface-container-highest":"#d3e4fe","on-surface-variant":"#434655","secondary-fixed":"#dae2fd","secondary-fixed-dim":"#bec6e0","surface":"#f8f9ff","tertiary-container":"#0073ae","on-primary-container":"#eeefff","primary-container":"#2563eb","surface-variant":"#d3e4fe","surface-container-high":"#dce9ff","inverse-surface":"#213145","on-error":"#ffffff","on-secondary-fixed-variant":"#3f465c","background":"#f8f9ff","on-tertiary-fixed":"#001d31","on-secondary":"#ffffff","secondary":"#565e74","on-primary-fixed-variant":"#003ea8","tertiary-fixed-dim":"#93ccff","tertiary-fixed":"#cce5ff","surface-bright":"#f8f9ff","outline":"#737686","surface-container-low":"#eff4ff","primary-fixed":"#dbe1ff","on-primary-fixed":"#00174b","on-secondary-fixed":"#131b2e","outline-variant":"#c3c6d7","inverse-primary":"#b4c5ff","tertiary":"#005a89","primary-fixed-dim":"#b4c5ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-lg":"2rem","gutter-sm":"1rem","gutter":"1.5rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","space-xl":"2.5rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem"},fontFamily:{"body-lg":["Inter"],"headline-xl":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"headline-md":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"code-inline":["JetBrains Mono"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"label-md":["Inter"],"headline-xl-mobile":["Inter"]},fontSize:{"body-lg":["16px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.015em","fontWeight":"500"}],"code-inline":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="X1 ERP Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1ULxDgj2B0lFOtDghnviVQYVA1Wl63r33NtQUPTrj8JcM8BpwoHi99y4pDUJaIOCB7VmwnUOzKymHWRNq9voZn5nazlMlRqEkTjtyvkqYqMhGWy4zd90sm8cRHlY7Dh2UIjaQBq_melyi7aMHP0eLU6dZ05aojlfE_0dN_V2vu38WlNJcIYKUOEZVmDArfBY49iFy6uXYt8XM0kW9st8owzYraRo15B9nYGOTxqfC1Wo18lcudnzgx-sOE"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">X1 ERP CMS Portal</span></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="trang-chu" href="#">Xem cổng tài liệu</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="huong-dan-nghiep-vu" href="#">Thư viện quy trình</a></nav></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-secondary text-[20px] pointer-events-none">search</span><input class="w-full bg-surface-container-low pl-10 pr-20 py-1.5 rounded-lg border border-outline-variant/50 text-on-surface placeholder:text-secondary font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Tìm kiếm bài viết, tài liệu Odoo..." type="text"><div class="absolute right-2.5 flex items-center gap-1"><kbd class="px-1.5 py-0.5 font-label-sm text-label-sm bg-surface-container-lowest border border-outline-variant rounded text-secondary font-code-inline">Ctrl + K</kbd></div></div></div><div class="flex items-center gap-space-md"><a class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-outline-variant/60 bg-surface hover:bg-surface-container-high transition-colors text-on-surface font-label-md text-label-md" data-path="trang-chu" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">visibility</span><span>Chế độ Người xem</span></a><div class="flex items-center gap-space-sm pl-space-xs border-l border-outline-variant/40"><div class="flex flex-col text-right hidden lg:block"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Vũ Minh Đức</span><span class="font-label-sm text-label-sm text-primary font-medium mt-0.5">Admin - Vũ Minh Đức</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZp-poUhux7KXEm7cqjxsmeCV7hL2NbxQnWt-0LNoKrlDBfQ-irV7UhKd5c8dJd7CgdwP6pZnPLBkDTccrdRHy1B72SYKcmdFMMg4cl1UgOcLWkrE8gzbROQ1zw_N30OzAqMRWcpCecv-haCDS-Zgzmx_wYa6bnJH9-KYWXz-T7GfRln0qpPNDDkWscotn0SXioWF7omsyfA8-iktcXJQrL7_dpCpk2sV3uIuSxYlxGchWKUJKHWsY"></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/30 z-40 flex flex-col py-space-md"><div class="px-space-md mb-space-sm"><p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Quản trị nội dung</p></div><nav class="flex-1 px-space-sm flex flex-col gap-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" data-path="quan-tri-cms" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Tổng quan CMS</span></a><a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" data-path="quan-ly-bai-viet" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span>Quản lý Bài viết</span></a><a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" data-path="quan-ly-chuyen-muc" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span>Chuyên mục &amp; Menu</span></a><a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" data-path="phien-ban-odoo-19" href="#"><span class="material-symbols-outlined text-[20px]">layers</span><span>Phiên bản Odoo 19</span></a><div class="my-space-sm border-t border-outline-variant/30"></div><div class="px-space-sm mb-space-xs"><p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Hệ thống</p></div><a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors" data-path="cai-dat-he-thong" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Cài đặt &amp; Quyền hạn</span></a></nav><div class="px-space-md pt-space-sm border-t border-outline-variant/30"><div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between"><span class="font-label-sm text-label-sm text-secondary">Trạng thái CMS</span><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>Online</span></div></div></aside><div class="pl-64"><main class="relative pt-16 bg-surface min-h-screen px-gutter py-space-lg"><div class="flex flex-col w-full pb-space-xl">
+<!-- Toast / Banner Notification Demo -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-space-sm rounded-xl mb-space-md shadow-sm transition-all duration-300" id="saveToast">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Cập nhật thành công:</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Đã cập nhật cấu trúc phân cấp và thuộc tính chuyên mục Odoo ERP vào hệ thống</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary">Vừa xong (10:42)</span>
+<button class="p-1 text-secondary hover:text-on-surface rounded-lg transition-colors" onclick="document.getElementById('saveToast').remove()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Top Management Header & Global Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary/10 text-primary font-semibold uppercase tracking-wider">CMS ERP 19</span>
+<span class="font-label-sm text-label-sm text-secondary">ID Phân vùng: #TREE-ODOO-PROD</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-semibold">Quản lý Cây chức năng &amp; Chuyên mục nghiệp vụ</h1>
+<p class="font-body-md text-body-md text-secondary">Cấu trúc thư mục đa cấp hiển thị trên cổng tài liệu X1 ERP và phân quyền vai trò người dùng</p>
+</div>
+<!-- Actions Toolbar -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg shadow-sm transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px] text-primary">create_new_folder</span>
+<span>+ Thêm chức năng cha (Root)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg shadow-sm transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px] text-primary">add_box</span>
+<span>+ Thêm chức năng con</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg shadow-sm transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px] text-secondary">note_add</span>
+<span>+ Thêm bài viết mới</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-md transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Lưu toàn bộ thứ tự</span>
+</button>
+</div>
+</div>
+<!-- Main 2-Column Split Workplace -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- ==========================================
+         LEFT COLUMN (~42% => 5 cols on 12-col grid)
+         Visual Interactive Hierarchical Tree
+         ========================================== -->
+<div class="xl:col-span-5 flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<!-- Tree Header & Quick Actions -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">account_tree</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Cây sơ đồ phân cấp</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant font-medium">9 Root • 24 Nhánh</span>
+</div>
+<!-- Quick Finder Search -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-secondary text-[18px]">search</span>
+<input class="w-full pl-9 pr-8 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest focus:shadow-sm" placeholder="Tìm kiếm chuyên mục hoặc mã phân cấp..." type="text">
+<button class="absolute right-2.5 top-2 text-secondary hover:text-on-surface">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+</button>
+</div>
+<!-- Tree Utilities Bar -->
+<div class="flex items-center justify-between py-1 px-1 bg-surface-container-low rounded-lg font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">unfold_more</span>
+<span>Mở rộng tất cả</span>
+</button>
+<span class="text-secondary/40">•</span>
+<button class="px-2 py-1 rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">unfold_less</span>
+<span>Thu gọn</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-secondary pr-1.5" title="Kéo thả các mục có biểu tượng để đổi thứ tự cấp bậc">
+<span class="material-symbols-outlined text-[15px]">drag_indicator</span>
+<span class="text-[11px] font-medium hidden sm:inline">Kéo thả sắp xếp</span>
+</div>
+</div>
+<!-- Scrollable Tree Structure Container -->
+<div class="flex flex-col gap-1 mt-1 max-h-[750px] overflow-y-auto pr-1">
+<!-- ROOT 1: MUA HÀNG (EXPANDED & ACTIVE ROOT) -->
+<div class="flex flex-col bg-surface-container-low rounded-lg shadow-sm">
+<!-- Root 1 Header Row -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary hover:text-on-surface text-[18px] transition-transform duration-150 rotate-90">arrow_right</span>
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">folder_open</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">1. Mua hàng</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-secondary">3 nhóm</span>
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-primary/10 text-primary font-medium">8 bài</span>
+<!-- Visibility Switch Mockup -->
+<span class="w-7 h-4 bg-primary rounded-full relative flex items-center p-0.5 cursor-pointer ml-1" title="Đang hiển thị công khai">
+<span class="w-3 h-3 bg-on-primary rounded-full ml-auto shadow-sm"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[18px] p-0.5 hover:text-on-surface">drag_handle</span>
+</div>
+</div>
+<!-- LEVEL 1 NESTED CONTAINER -->
+<div class="flex flex-col pl-4 pr-1 py-1 gap-1 relative before:absolute before:left-3.5 before:top-2 before:bottom-3 before:w-0.5 before:bg-outline-variant/30">
+<!-- SUB-ITEM 1.1: Mua hàng nhập kho (ACTIVE SELECTED NODE) -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-1.5 shadow-sm">
+<div class="flex items-center justify-between p-1.5 bg-primary/10 rounded-lg cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[16px] rotate-90">arrow_right</span>
+<span class="material-symbols-outlined text-primary text-[18px]">inventory_2</span>
+<span class="font-label-md text-label-md font-bold text-primary truncate">1.1. Mua hàng nhập kho</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<span class="px-1.5 py-0.2 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-medium">4 bài</span>
+<span class="material-symbols-outlined text-primary text-[18px] cursor-grab">drag_indicator</span>
+</div>
+</div>
+<!-- LEVEL 2 ARTICLES UNDER 1.1 -->
+<div class="flex flex-col pl-4 pt-1.5 pb-1 gap-1 relative before:absolute before:left-3 before:top-2 before:bottom-2 before:w-0.5 before:bg-outline-variant/40">
+<!-- Article 1 -->
+<div class="group flex items-center justify-between px-2 py-1.5 rounded-md hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2 min-w-0">
+<span class="font-code-inline text-[11px] text-secondary font-semibold">#1</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">description</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Tạo đơn mua hàng (PO)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-[11px] bg-surface-container-high text-primary font-medium">Xuất bản</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[16px]">open_in_new</span>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="group flex items-center justify-between px-2 py-1.5 rounded-md hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2 min-w-0">
+<span class="font-code-inline text-[11px] text-secondary font-semibold">#2</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">description</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Xác nhận đơn mua hàng</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-[11px] bg-surface-container-high text-primary font-medium">Xuất bản</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[16px]">open_in_new</span>
+</div>
+</div>
+<!-- Article 3 -->
+<div class="group flex items-center justify-between px-2 py-1.5 rounded-md hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2 min-w-0">
+<span class="font-code-inline text-[11px] text-secondary font-semibold">#3</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">description</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Nhận hàng nhập kho (GRN)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-[11px] bg-surface-container-high text-primary font-medium">Xuất bản</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[16px]">open_in_new</span>
+</div>
+</div>
+<!-- Article 4 (Draft) -->
+<div class="group flex items-center justify-between px-2 py-1.5 rounded-md hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2 min-w-0">
+<span class="font-code-inline text-[11px] text-secondary font-semibold">#4</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">edit_note</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Hạch toán hóa đơn mua hàng</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-[11px] bg-secondary-container text-on-secondary-container font-medium">Bản nháp</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[16px]">open_in_new</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SUB-ITEM 1.2: Trả hàng mua -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[16px]">chevron_right</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">assignment_return</span>
+<span class="font-label-md text-label-md text-on-surface truncate">1.2. Trả hàng mua</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-secondary">2 bài</span>
+<span class="w-6 h-3.5 bg-primary/70 rounded-full relative flex items-center p-0.5">
+<span class="w-2.5 h-2.5 bg-on-primary rounded-full ml-auto"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[16px]">drag_indicator</span>
+</div>
+</div>
+<!-- SUB-ITEM 1.3: Phân bổ chi phí mua hàng -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[16px]">chevron_right</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">calculate</span>
+<span class="font-label-md text-label-md text-on-surface truncate">1.3. Phân bổ chi phí mua hàng</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-secondary">2 bài</span>
+<span class="w-6 h-3.5 bg-primary/70 rounded-full relative flex items-center p-0.5">
+<span class="w-2.5 h-2.5 bg-on-primary rounded-full ml-auto"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[16px]">drag_indicator</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ROOT 2: BÁN HÀNG -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">storefront</span>
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">2. Bán hàng</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-secondary">4 nhóm</span>
+<span class="w-6 h-3.5 bg-primary rounded-full relative flex items-center p-0.5">
+<span class="w-2.5 h-2.5 bg-on-primary rounded-full ml-auto"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[18px]">drag_handle</span>
+</div>
+</div>
+<!-- ROOT 3: KHO -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">warehouse</span>
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">3. Kho vận</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-secondary">4 nhóm</span>
+<span class="w-6 h-3.5 bg-primary rounded-full relative flex items-center p-0.5">
+<span class="w-2.5 h-2.5 bg-on-primary rounded-full ml-auto"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[18px]">drag_handle</span>
+</div>
+</div>
+<!-- ROOT 4: SẢN XUẤT -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">precision_manufacturing</span>
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">4. Sản xuất</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-secondary">2 nhóm</span>
+<span class="w-6 h-3.5 bg-primary rounded-full relative flex items-center p-0.5">
+<span class="w-2.5 h-2.5 bg-on-primary rounded-full ml-auto"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[18px]">drag_handle</span>
+</div>
+</div>
+<!-- ROOT 5: SỬA CHỮA -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">build_circle</span>
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">5. Sửa chữa &amp; Bảo hành</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-secondary">1 nhóm</span>
+<span class="w-6 h-3.5 bg-primary rounded-full relative flex items-center p-0.5">
+<span class="w-2.5 h-2.5 bg-on-primary rounded-full ml-auto"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[18px]">drag_handle</span>
+</div>
+</div>
+<!-- ROOT 6: TIỀN MẶT -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">payments</span>
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">6. Tiền mặt (Quỹ)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-secondary">3 nhóm</span>
+<span class="w-6 h-3.5 bg-primary rounded-full relative flex items-center p-0.5">
+<span class="w-2.5 h-2.5 bg-on-primary rounded-full ml-auto"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[18px]">drag_handle</span>
+</div>
+</div>
+<!-- ROOT 7: TIỀN GỬI NGÂN HÀNG -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">7. Tiền gửi ngân hàng</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-secondary">2 nhóm</span>
+<span class="w-6 h-3.5 bg-primary rounded-full relative flex items-center p-0.5">
+<span class="w-2.5 h-2.5 bg-on-primary rounded-full ml-auto"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[18px]">drag_handle</span>
+</div>
+</div>
+<!-- ROOT 8: KẾ TOÁN TỔNG HỢP -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">receipt_long</span>
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">8. Kế toán tổng hợp</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-secondary">5 nhóm</span>
+<span class="w-6 h-3.5 bg-primary rounded-full relative flex items-center p-0.5">
+<span class="w-2.5 h-2.5 bg-on-primary rounded-full ml-auto"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[18px]">drag_handle</span>
+</div>
+</div>
+<!-- ROOT 9: BÁO CÁO -->
+<div class="group flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">chevron_right</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">insights</span>
+<span class="font-label-md text-label-md font-medium text-on-surface truncate">9. Báo cáo &amp; Phân tích</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-secondary">4 nhóm</span>
+<span class="w-6 h-3.5 bg-primary rounded-full relative flex items-center p-0.5">
+<span class="w-2.5 h-2.5 bg-on-primary rounded-full ml-auto"></span>
+</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 text-[18px]">drag_handle</span>
+</div>
+</div>
+</div>
+<!-- Quick Hint Footer -->
+<div class="flex items-center gap-2 p-2 bg-surface-container-low rounded-lg text-secondary font-label-sm text-label-sm mt-2">
+<span class="material-symbols-outlined text-primary text-[18px]">lightbulb</span>
+<span>Mẹo: Bạn có thể click chuột phải vào từng chuyên mục để nhân bản hoặc thêm nhanh chức năng cấp con.</span>
+</div>
+</div>
+<!-- ==========================================
+         RIGHT COLUMN (~58% => 7 cols on 12-col grid)
+         Category Information & Form Editor Panel
+         ========================================== -->
+<div class="xl:col-span-7 flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative">
+<!-- Panel Header & Status Badge -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm gap-2">
+<div class="flex flex-col gap-1">
+<!-- Breadcrumb Pathway -->
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm">
+<span>Root</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface-variant font-medium">1. Mua hàng</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">1.1. Mua hàng nhập kho</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Chi tiết chuyên mục: 1.1. Mua hàng nhập kho</h2>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm bg-primary/10 text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            Hiển thị công khai
+          </span>
+<span class="font-code-inline text-[12px] px-2 py-1 bg-surface-container rounded text-secondary font-medium">CAT_ID: #1042</span>
+</div>
+</div>
+<!-- Detail Form -->
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault();">
+<!-- Row 1: Name & Slug -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Tên chức năng (Category Name) <span class="text-error">*</span></span>
+<span class="text-secondary font-normal font-label-sm text-[11px]">Tiếng Việt có dấu</span>
+</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20" type="text" value="Mua hàng nhập kho">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Đường dẫn URL (Slug) <span class="text-error">*</span></span>
+<span class="text-secondary font-normal font-label-sm text-[11px]">Tự động tạo</span>
+</label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-code-inline text-[12px] text-secondary">/docs/</span>
+<input class="w-full pl-16 pr-3 py-2 bg-surface-container-low rounded-lg font-code-inline text-body-sm text-primary font-medium focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20" type="text" value="mua-hang-nhap-kho">
+</div>
+</div>
+</div>
+<!-- Row 2: Parent Category & Icon Selector -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Parent Selection -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Chức năng cha (Parent Category)</label>
+<div class="relative">
+<select class="w-full appearance-none px-3 py-2 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest pr-8 cursor-pointer">
+<option value="none">Không có - Là danh mục gốc (Root Level)</option>
+<option selected="" value="1">1. Mua hàng (Root)</option>
+<option value="2">2. Bán hàng (Root)</option>
+<option value="3">3. Kho vận (Root)</option>
+<option value="4">4. Sản xuất (Root)</option>
+<option value="5">5. Sửa chữa (Root)</option>
+<option value="6">6. Tiền mặt (Root)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 pointer-events-none text-secondary text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Icon Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Biểu tượng nhận diện</label>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+<div class="flex-1 relative">
+<select class="w-full appearance-none px-3 py-2 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest pr-8 cursor-pointer">
+<option selected="" value="inventory_2">inventory_2 (Thùng hàng nhập)</option>
+<option value="shopping_bag">shopping_bag (Mua sắm)</option>
+<option value="receipt_long">receipt_long (Hóa đơn mua)</option>
+<option value="local_shipping">local_shipping (Giao vận)</option>
+<option value="folder_open">folder_open (Thư mục chung)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 pointer-events-none text-secondary text-[18px]">arrow_drop_down</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 3: Description & Sort Order -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="md:col-span-3 flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Mô tả chuyên mục</label>
+<textarea class="w-full px-3 py-2 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest resize-none" rows="2">Tập hợp các tài liệu hướng dẫn quy trình nghiệp vụ mua hàng hóa về nhập kho doanh nghiệp, tích hợp luồng kiểm đếm và đối soát hóa đơn nhà cung cấp Odoo 19.</textarea>
+</div>
+<div class="md:col-span-1 flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Thứ tự hiển thị</label>
+<div class="relative flex items-center">
+<input class="w-full px-3 py-2 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface text-center font-bold focus:outline-none focus:bg-surface-container-lowest" max="99" min="1" type="number" value="1">
+</div>
+<span class="font-label-sm text-[11px] text-secondary text-center">Độ ưu tiên từ nhỏ tới lớn</span>
+</div>
+</div>
+<!-- Visibility & System Settings (Toggles) -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<h3 class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider text-secondary">Cài đặt hiển thị &amp; Phân quyền</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-1">
+<!-- Toggle 1 -->
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="hidden peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-variant peer-checked:bg-primary rounded-full relative p-0.5 transition-colors shrink-0 mt-0.5">
+<div class="w-4 h-4 bg-on-primary rounded-full peer-checked:translate-x-4 transition-transform shadow-sm"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Cây thư mục portal</span>
+<span class="font-label-sm text-label-sm text-secondary">Hiển thị trên menu tra cứu tài liệu</span>
+</div>
+</label>
+<!-- Toggle 2 -->
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="hidden peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-variant peer-checked:bg-primary rounded-full relative p-0.5 transition-colors shrink-0 mt-0.5">
+<div class="w-4 h-4 bg-on-primary rounded-full peer-checked:translate-x-4 transition-transform shadow-sm"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Tìm kiếm con</span>
+<span class="font-label-sm text-label-sm text-secondary">Cho phép Ctrl+K quét nội dung con</span>
+</div>
+</label>
+<!-- Toggle 3 -->
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input class="hidden peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-variant peer-checked:bg-primary rounded-full relative p-0.5 transition-colors shrink-0 mt-0.5">
+<div class="w-4 h-4 bg-on-primary rounded-full peer-checked:translate-x-4 transition-transform shadow-sm"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Quyền nâng cao</span>
+<span class="font-label-sm text-label-sm text-secondary">Yêu cầu đăng nhập tài khoản Quản trị</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Sub-articles Management Table -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">menu_book</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Danh sách bài viết trực thuộc (4)</h3>
+</div>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-medium transition-colors">
+<span class="material-symbols-outlined text-[16px]">add_link</span>
+<span>+ Gán bài viết vào nhóm</span>
+</button>
+</div>
+<!-- Table Container -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<div class="grid grid-cols-12 gap-2 px-3 py-2 bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">
+<div class="col-span-1 text-center">Thứ tự</div>
+<div class="col-span-6">Tiêu đề bài viết nghiệp vụ</div>
+<div class="col-span-3">Trạng thái</div>
+<div class="col-span-2 text-right pr-2">Thao tác</div>
+</div>
+<div class="flex flex-col divide-y divide-surface-container">
+<!-- Item 1 -->
+<div class="grid grid-cols-12 gap-2 px-3 py-2.5 items-center hover:bg-surface-container-lowest transition-colors">
+<div class="col-span-1 flex items-center justify-center gap-1">
+<span class="font-code-inline font-bold text-primary text-[13px]">1</span>
+<div class="flex flex-col">
+<button class="text-secondary hover:text-primary leading-none"><span class="material-symbols-outlined text-[12px]">expand_less</span></button>
+<button class="text-secondary hover:text-primary leading-none"><span class="material-symbols-outlined text-[12px]">expand_more</span></button>
+</div>
+</div>
+<div class="col-span-6 flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">article</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Tạo đơn mua hàng (Purchase Order)</span>
+</div>
+<div class="col-span-3">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary/10 text-primary font-medium">Đã xuất bản</span>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-1 pr-1">
+<button class="p-1 text-secondary hover:text-primary rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 text-secondary hover:text-error rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">link_off</span></button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="grid grid-cols-12 gap-2 px-3 py-2.5 items-center hover:bg-surface-container-lowest transition-colors">
+<div class="col-span-1 flex items-center justify-center gap-1">
+<span class="font-code-inline font-bold text-primary text-[13px]">2</span>
+<div class="flex flex-col">
+<button class="text-secondary hover:text-primary leading-none"><span class="material-symbols-outlined text-[12px]">expand_less</span></button>
+<button class="text-secondary hover:text-primary leading-none"><span class="material-symbols-outlined text-[12px]">expand_more</span></button>
+</div>
+</div>
+<div class="col-span-6 flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">article</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Xác nhận đơn mua hàng và gửi email NCC</span>
+</div>
+<div class="col-span-3">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary/10 text-primary font-medium">Đã xuất bản</span>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-1 pr-1">
+<button class="p-1 text-secondary hover:text-primary rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 text-secondary hover:text-error rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">link_off</span></button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="grid grid-cols-12 gap-2 px-3 py-2.5 items-center hover:bg-surface-container-lowest transition-colors">
+<div class="col-span-1 flex items-center justify-center gap-1">
+<span class="font-code-inline font-bold text-primary text-[13px]">3</span>
+<div class="flex flex-col">
+<button class="text-secondary hover:text-primary leading-none"><span class="material-symbols-outlined text-[12px]">expand_less</span></button>
+<button class="text-secondary hover:text-primary leading-none"><span class="material-symbols-outlined text-[12px]">expand_more</span></button>
+</div>
+</div>
+<div class="col-span-6 flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">article</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Nhận hàng nhập kho và in phiếu GRN</span>
+</div>
+<div class="col-span-3">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary/10 text-primary font-medium">Đã xuất bản</span>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-1 pr-1">
+<button class="p-1 text-secondary hover:text-primary rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 text-secondary hover:text-error rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">link_off</span></button>
+</div>
+</div>
+<!-- Item 4 (Draft) -->
+<div class="grid grid-cols-12 gap-2 px-3 py-2.5 items-center hover:bg-surface-container-lowest transition-colors">
+<div class="col-span-1 flex items-center justify-center gap-1">
+<span class="font-code-inline font-bold text-primary text-[13px]">4</span>
+<div class="flex flex-col">
+<button class="text-secondary hover:text-primary leading-none"><span class="material-symbols-outlined text-[12px]">expand_less</span></button>
+<button class="text-secondary hover:text-primary leading-none"><span class="material-symbols-outlined text-[12px]">expand_more</span></button>
+</div>
+</div>
+<div class="col-span-6 flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">article</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Hạch toán hóa đơn mua hàng (Vendor Bill)</span>
+</div>
+<div class="col-span-3">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium">Bản nháp</span>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-1 pr-1">
+<button class="p-1 text-secondary hover:text-primary rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1 text-secondary hover:text-error rounded hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">link_off</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Actions Bar -->
+<div class="sticky bottom-0 bg-surface-container-lowest/95 backdrop-blur-sm pt-space-md pb-1 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<!-- Danger Action -->
+<div class="relative group">
+<button class="flex items-center gap-1.5 px-3 py-2 bg-error-container/40 hover:bg-error-container text-error font-label-md text-label-md rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Xóa chuyên mục</span>
+</button>
+<div class="absolute bottom-full mb-1 left-0 hidden group-hover:block w-64 p-2 bg-inverse-surface text-inverse-on-surface rounded-lg font-label-sm text-label-sm shadow-xl z-20">
+              Có 4 bài viết trực thuộc. Cần chuyển bài viết sang chuyên mục khác hoặc xác nhận xóa trắng!
+            </div>
+</div>
+<!-- Primary Flow Actions -->
+<div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+<button class="flex-1 sm:flex-initial px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg transition-colors" type="button">
+              Hủy thay đổi
+            </button>
+<button class="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-5 py-2 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-md hover:shadow-lg transition-all active:scale-[0.98]" onclick="simulateSave()" type="submit">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Lưu thay đổi chuyên mục</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  function simulateSave() {
+    const toast = document.getElementById('saveToast');
+    if (toast) {
+      toast.classList.add('bg-primary-fixed');
+      setTimeout(() => {
+        toast.classList.remove('bg-primary-fixed');
+      }, 500);
+    }
+  }
+</script></main></div></body></html>
