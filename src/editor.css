@@ -19,6 +19,13 @@
 .rich-text-input h3:first-child { margin-top: 0; }
 .rich-text-input figure { cursor: default; }
 .rich-text-input img { max-width: 100%; height: auto; }
+.html-source-pane textarea {
+  min-height: 570px;
+  resize: none;
+  font: 13px/1.75 'JetBrains Mono', Consolas, monospace;
+  color: #183653;
+  background: #fbfcff;
+}
 
 @media (max-width: 760px) {
   .rich-text-input { min-height: 360px; padding: 20px 17px; }

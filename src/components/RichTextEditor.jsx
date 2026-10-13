@@ -13,7 +13,7 @@ turndown.addRule('figures', {
   }
 })
 
-function safeHtml(markdown) {
+export function markdownToHtml(markdown) {
   const doc = new DOMParser().parseFromString(marked.parse(markdown || '', { gfm: true, breaks: true }), 'text/html')
   doc.querySelectorAll('script,style,iframe,object,embed,form').forEach(node => node.remove())
   doc.body.querySelectorAll('*').forEach(node => [...node.attributes].forEach(attribute => {
@@ -23,17 +23,21 @@ function safeHtml(markdown) {
   return doc.body.innerHTML
 }
 
+export function htmlToMarkdown(html) {
+  return turndown.turndown(html || '').trim()
+}
+
 export const RichTextEditor = forwardRef(function RichTextEditor({ value = '', onChange }, ref) {
   const editor = useRef(null), lastMarkdown = useRef('')
   const sync = () => {
     if (!editor.current) return
-    const markdown = turndown.turndown(editor.current.innerHTML).trim()
+    const markdown = htmlToMarkdown(editor.current.innerHTML)
     lastMarkdown.current = markdown
     onChange(markdown)
   }
   useEffect(() => {
     if (!editor.current || value === lastMarkdown.current) return
-    editor.current.innerHTML = safeHtml(value)
+    editor.current.innerHTML = markdownToHtml(value)
     lastMarkdown.current = value
   }, [value])
   useImperativeHandle(ref, () => ({
