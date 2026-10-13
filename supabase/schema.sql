@@ -1,4 +1,4 @@
--- X1 ERP Help Center: chạy toàn bộ script trong Supabase > SQL Editor.
+-- X1 Accounting: chạy toàn bộ script trong Supabase > SQL Editor.
 -- Bảng dữ liệu, phân quyền phía máy chủ và kho hình ảnh.
 create extension if not exists pgcrypto;
 

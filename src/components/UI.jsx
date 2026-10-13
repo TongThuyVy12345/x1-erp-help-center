@@ -4,7 +4,7 @@ import { BookOpen, BookOpenCheck, LayoutDashboard, FolderTree, FileText, LogIn, 
 import { useData } from '../state'
 import { cleanSearch, getChildren } from '../lib/util'
 
-export function Logo({ small = false }) { return <Link to="/" className="brand" aria-label="X1 ERP Help Center"><span className="brand-mark">X1</span><span className="brand-text">X1 ERP <b>{small ? 'Docs' : 'Help Center'}</b></span></Link> }
+export function Logo({ small = false }) { return <Link to="/" className="brand" aria-label="X1 Accounting"><span className="brand-mark">X1</span><span className="brand-text">X1 Accounting  <b>{small ? 'Docs' : 'Help Center'}</b></span></Link> }
 
 export function Header() {
   const { session, isAdmin, signOut } = useData()
@@ -60,7 +60,7 @@ export function AdminLayout({ children, title, detail, action }) {
     <Link to="/" ><Eye size={19}/> Chế độ người xem</Link>
     <button onClick={logout}><LogOut size={19}/> Đăng xuất</button>
     <div className="sidebar-bottom"><ShieldCheck size={18}/> Chế độ quản trị viên</div>
-  </aside><main className="admin-main"><div className="page-intro"><div><div className="eyebrow">X1 ERP CMS PORTAL</div><h1>{title}</h1>{detail && <p className="muted">{detail}</p>}</div>{action}</div>{children}</main></div></>
+  </aside><main className="admin-main"><div className="page-intro"><div><div className="eyebrow">X1 Accounting  CMS PORTAL</div><h1>{title}</h1>{detail && <p className="muted">{detail}</p>}</div>{action}</div>{children}</main></div></>
 }
 
 export function Empty({ icon: Icon = BookOpen, title = 'Chưa có nội dung', detail = '' }) { return <div className="empty"><Icon size={34}/><h3>{title}</h3><p>{detail}</p></div> }

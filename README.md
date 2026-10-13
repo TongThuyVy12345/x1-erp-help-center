@@ -1,4 +1,4 @@
-# X1 ERP Help Center – Website hướng dẫn sử dụng
+# X1 Accounting – Website hướng dẫn sử dụng
 
 Dự án web **React + Vite + Supabase**, triển khai trên **Vercel**, dựa trên 6 giao diện HTML gốc trong `design-references/`. Đây là ứng dụng hoạt động với cơ sở dữ liệu thật, không chỉ là HTML tĩnh.
 
@@ -66,7 +66,7 @@ Chính sách database chặn người xem sửa dữ liệu ngay cả khi họ t
 ```bash
 git init
 git add .
-git commit -m "Initial X1 ERP Help Center"
+git commit -m "Initial X1 Accounting"
 git branch -M main
 git remote add origin https://github.com/TEN_GITHUB/x1-erp-help-center.git
 git push -u origin main

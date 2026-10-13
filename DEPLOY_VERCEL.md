@@ -1,4 +1,4 @@
-# Triển khai X1 ERP Help Center lên Vercel — hướng dẫn ngắn
+# Triển khai X1 Accounting lên Vercel — hướng dẫn ngắn
 
 **Bạn cần:** tài khoản [GitHub](https://github.com), [Vercel](https://vercel.com), [Supabase](https://supabase.com).
 
@@ -11,7 +11,7 @@
    ```bash
    git init
    git add .
-   git commit -m "X1 ERP Help Center"
+   git commit -m "X1 Accounting"
    git branch -M main
    git remote add origin https://github.com/TEN_TAI_KHOAN/x1-erp-help-center.git
    git push -u origin main
