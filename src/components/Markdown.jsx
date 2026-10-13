@@ -1,8 +1,24 @@
 import React from 'react'
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown, { defaultUrlTransform } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import rehypeSanitize from 'rehype-sanitize'
+import rehypeSanitize, { defaultSchema } from 'rehype-sanitize'
 import { slugify } from '../lib/util'
+
+const safeImageDataUrl = /^data:image\/(?:png|jpe?g|gif|webp);base64,[a-z0-9+/]+=*$/i
+const markdownSchema = {
+  ...defaultSchema,
+  protocols: {
+    ...defaultSchema.protocols,
+    // `data` is still validated by urlTransform below and is only accepted on
+    // image src attributes for the bitmap formats supported by the editor.
+    src: [...(defaultSchema.protocols?.src || []), 'data']
+  }
+}
+
+function safeUrlTransform(url, key, node) {
+  if (key === 'src' && node.tagName === 'img' && safeImageDataUrl.test(url)) return url
+  return defaultUrlTransform(url)
+}
 
 function plain(children) { return React.Children.toArray(children).map(ch => typeof ch === 'string' ? ch : (ch?.props?.children ? plain(ch.props.children) : '')).join('') }
 export function Markdown({ content = '' }) {
@@ -11,7 +27,7 @@ export function Markdown({ content = '' }) {
     const base = slugify(plain(children)); const n = seen.get(base) || 0; seen.set(base, n + 1)
     return <Tag id={n ? `${base}-${n}` : base} {...props}>{children}</Tag>
   }
-  return <div className="markdown-body"><ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}
+  return <div className="markdown-body"><ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[[rehypeSanitize, markdownSchema]]} urlTransform={safeUrlTransform}
     components={{
       h1: heading('h1'), h2: heading('h2'), h3: heading('h3'),
       // The CMS preview uses its own scroll container. Lazy images can remain
