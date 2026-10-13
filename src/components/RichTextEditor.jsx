@@ -9,7 +9,12 @@ turndown.addRule('figures', {
   filter: 'figure',
   replacement: (_content, node) => {
     const image = node.querySelector('img')
-    return image ? `\n\n![${image.alt || ''}](${image.getAttribute('src') || ''})\n\n` : ''
+    if (!image) return ''
+    const alt = (image.alt || '').replaceAll('\\', '\\\\').replaceAll('[', '\\[').replaceAll(']', '\\]')
+    const src = (image.getAttribute('src') || '').replaceAll('\\', '%5C').replaceAll('<', '%3C').replaceAll('>', '%3E')
+    // Angle brackets preserve URLs containing spaces or parentheses when the
+    // visual editor converts its HTML back to Markdown.
+    return `\n\n![${alt}](<${src}>)\n\n`
   }
 })
 

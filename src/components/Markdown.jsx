@@ -14,7 +14,9 @@ export function Markdown({ content = '' }) {
   return <div className="markdown-body"><ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}
     components={{
       h1: heading('h1'), h2: heading('h2'), h3: heading('h3'),
-      img: ({ src, alt }) => <figure><img src={src} alt={alt || 'Ảnh minh họa'} loading="lazy"/><figcaption>{alt}</figcaption></figure>,
+      // The CMS preview uses its own scroll container. Lazy images can remain
+      // unloaded there even after their placeholder becomes visible.
+      img: ({ src, alt }) => <figure><img src={src} alt={alt || 'Ảnh minh họa'} decoding="async"/>{alt && <figcaption>{alt}</figcaption>}</figure>,
       a: ({ href, children }) => <a href={href} target={href?.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">{children}</a>,
       table: ({ children }) => <div className="table-scroll"><table>{children}</table></div>
     }}>{content}</ReactMarkdown></div>
