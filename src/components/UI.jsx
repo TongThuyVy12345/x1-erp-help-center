@@ -65,4 +65,4 @@ export function AdminLayout({ children, title, detail, action }) {
 
 export function Empty({ icon: Icon = BookOpen, title = 'Chưa có nội dung', detail = '' }) { return <div className="empty"><Icon size={34}/><h3>{title}</h3><p>{detail}</p></div> }
 export function Alert({ children, kind = 'info' }) { return <div className={'alert alert-' + kind}>{children}</div> }
-export function Footer() { return <footer className="footer"><div><Logo small/><p>Trung tâm hướng dẫn sử dụng X1 ERP · Odoo 19</p></div><div className="footer-links"><Link to="/">Trang chủ</Link><Link to="/guides">Hướng dẫn</Link><Link to="/login">Đăng nhập</Link></div></footer> }
+export function Footer() { return <footer className="footer"><div><Logo small/><p>Tài liệu hướng dẫn sử dụng kế toán X1</p></div><div className="footer-links"><Link to="/">Trang chủ</Link><Link to="/guides">Hướng dẫn</Link><Link to="/login">Đăng nhập</Link></div></footer> }

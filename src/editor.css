@@ -1,0 +1,25 @@
+.rich-text-input {
+  flex: 1;
+  min-height: 570px;
+  padding: 25px 28px;
+  outline: none;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.rich-text-input:empty::before {
+  content: attr(data-placeholder);
+  color: #9aa8bb;
+  pointer-events: none;
+}
+
+.rich-text-input:focus { box-shadow: inset 0 0 0 2px #d9e8ff; }
+.rich-text-input h1:first-child,
+.rich-text-input h2:first-child,
+.rich-text-input h3:first-child { margin-top: 0; }
+.rich-text-input figure { cursor: default; }
+.rich-text-input img { max-width: 100%; height: auto; }
+
+@media (max-width: 760px) {
+  .rich-text-input { min-height: 360px; padding: 20px 17px; }
+}
