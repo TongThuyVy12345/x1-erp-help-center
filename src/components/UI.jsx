@@ -4,7 +4,7 @@ import { BookOpen, BookOpenCheck, LayoutDashboard, FolderTree, FileText, LogIn, 
 import { useData } from '../state'
 import { cleanSearch, getChildren } from '../lib/util'
 
-export function Logo({ small = false }) { return <Link to="/" className="brand" aria-label="X1 Accounting"><span className="brand-mark">X1</span><span className="brand-text">X1 Accounting  <b>{small ? 'Docs' : 'Help Center'}</b></span></Link> }
+export function Logo({ small = false }) { return <Link to="/" className="brand" aria-label="X1 Accounting"><img className="brand-logo" src="/x1-logo.png" alt=""/><span className="brand-text">X1 Accounting <b>{small ? 'Docs' : 'Help Center'}</b></span></Link> }
 
 export function Header() {
   const { session, isAdmin, signOut } = useData()
