@@ -19,3 +19,11 @@
 .brand-logo{display:block;width:43px;height:43px;object-fit:contain;flex:0 0 auto}
 .footer .brand-logo{width:34px;height:34px}
 .login-brand .brand-logo{width:52px;height:52px}
+
+/* Keep long editor and preview content accessible inside their own panes. */
+.editor-workspace{height:clamp(560px,72vh,810px);min-height:0;max-height:none}
+.editor-input,.editor-preview{min-height:0;overflow:hidden}
+.editor-pane-label{flex-shrink:0}
+.editor-input textarea{min-height:0;resize:none;overflow:auto}
+.preview-scroll{min-height:0;overflow:auto}
+@media(max-width:760px){.editor-workspace{height:70vh;min-height:520px;max-height:none}.editor-workspace.split-editor{grid-template-rows:1fr 1fr}.editor-input,.editor-preview,.editor-input textarea{min-height:0}}
