@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
-import { BookOpen, BookOpenCheck, LayoutDashboard, FolderTree, FileText, LogIn, LogOut, Menu, Search, ShieldCheck, X, Eye, Plus, ChevronRight, ChevronDown, ShoppingCart, Package, Warehouse, Factory, Wrench, Wallet, Landmark, HandCoins, TrendingUp, ChartNoAxesCombined, CreditCard, ListTree, Home } from 'lucide-react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { BookOpen, BookOpenCheck, LayoutDashboard, FolderTree, FileText, LogOut, Menu, Search, ShieldCheck, X, Eye, Plus, ChevronRight, ChevronDown, ShoppingCart, Package, Warehouse, Factory, Wrench, Wallet, Landmark, HandCoins, TrendingUp, ChartNoAxesCombined, CreditCard, ListTree, Home } from 'lucide-react'
 import { useData } from '../state'
 import { cleanSearch, getChildren } from '../lib/util'
 
@@ -9,7 +9,7 @@ export function Logo({ small = false }) { return <Link to="/" className="brand" 
 export function Header() {
   const { session, isAdmin, signOut } = useData()
   const [q, setQ] = useState(''), [mobile, setMobile] = useState(false)
-  const nav = useNavigate(); const location = useLocation()
+  const nav = useNavigate()
   const submit = (e) => { e.preventDefault(); nav(`/guides?q=${encodeURIComponent(q)}`); setMobile(false) }
   const logout = async () => { await signOut(); nav('/') }
   return <header className="site-header"><div className="header-inner">
@@ -20,7 +20,7 @@ export function Header() {
       {isAdmin && <NavLink to="/admin" onClick={() => setMobile(false)}>Quản trị CMS</NavLink>}
     </nav>
     <form className="nav-search" onSubmit={submit}><Search size={18}/><input aria-label="Tìm tài liệu" placeholder="Tìm kiếm hướng dẫn sử dụng..." value={q} onChange={e => setQ(e.target.value)} /><kbd>Enter</kbd></form>
-    <div className="account-actions">{session ? <button className="btn btn-ghost btn-sm" onClick={logout}><LogOut size={17}/><span className="text-wide">Đăng xuất</span></button> : <Link className="btn btn-outline btn-sm" to="/login" state={{ from: location.pathname }}><LogIn size={17}/><span className="text-wide">Đăng nhập</span></Link>}{isAdmin && <Link className="avatar" to="/admin" title="Quản trị viên"><ShieldCheck size={19}/></Link>}</div>
+    {session && <div className="account-actions"><button className="btn btn-ghost btn-sm" onClick={logout}><LogOut size={17}/><span className="text-wide">Đăng xuất</span></button>{isAdmin && <Link className="avatar" to="/admin" title="Quản trị viên"><ShieldCheck size={19}/></Link>}</div>}
     <button className="mobile-menu" aria-label="Mở menu" onClick={() => setMobile(!mobile)}>{mobile ? <X/> : <Menu/>}</button>
   </div></header>
 }
